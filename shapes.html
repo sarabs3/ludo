@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <style>
+            .rectangle {
+                color: blue;
+                background-color: blue;
+                width: 200px;
+                height: 110px;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+            }
+            .circle {
+                color:red;
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+            }
+            .bluecircle {
+                color:blue;
+                background-color: blue;
+            }
+            .oval {
+                background-color:rgb(255, 106, 0);
+                width: 90px;
+                height: 130px;
+                border-radius: 100%;
+
+            }
+            .square {
+                background-color:green;
+                color:green; 
+                width: 100px;
+                height: 100px;
+            }
+            p {
+                font-size: 120px;
+                color: white;
+                background-color: black;
+                border-radius: 10%;
+                font-size: 40px;
+                margin: 0;
+                text-align: center;
+            }
+            .bordercircle {
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                border-radius: 100%;
+            }
+            div {
+                display: flex;
+            }
+            main {
+                width: 10px;
+                margin: 0 auto;
+                background-color: #ccc;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="rectangle">I am blue rectangle</div>
+                <div class="circle"></div>
+                <div class="oval"></div>
+            </div>
+            <div class="container">
+
+                <div class="square">I am green square</div>
+                <div class="circle bluecircle"></div>
+                <div class="circle bordercircle"></div>
+            </div>
+            <div class="container">
+                <div class="rectangle">I am blue rectangle</div>
+                <div class="circle"></div>
+                <div class="oval"></div>
+            </div>
+        </main>
+        <p>Hello</p>
+    </body>
+</html>

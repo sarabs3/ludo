@@ -1,0 +1,317 @@
+<html>
+    <head>
+        <style>
+            .red {
+            border-color:red ;
+            }
+            .green {
+            border-color:green ;
+        }
+            .yellow {
+            border-color:rgb(255, 183, 0) ;
+            }
+            .blue {
+            border-color:blue ;
+        }
+        .square {
+            border-width: 30px;
+            width: 132px;
+            height: 132px;
+            border-style: solid;
+        }
+        .squar {
+            border-color:black ;
+            border-width: 1px;
+            width: 30px;
+            height: 30px;
+            border-style: solid;
+        }
+       .row {
+            display:flex;
+        }        
+        .boxGroup {
+            /* display: flex; */
+        }
+        .boxGroupRow {
+            display: flex;
+            width: 96px;
+        }
+        .box {
+            width:30px;
+            height:30px;
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+        }
+        .box.redBackground {
+            background-color: red;
+        }
+        .greenBackground {
+            background-color: green;
+        }
+        .square.center {
+            width:0px;
+            height:0px;
+            border-left-color: red;
+            border-right-color: green;
+            border-top-color: yellow;
+            border-bottom-color: blue;
+            border-width: 48px;
+        }
+        .box.blue {
+            background-color: blue;
+        }
+        #showNumber {
+            font-size: 40px;
+        }
+        #dice {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .row {
+            display:flex;
+        }
+        .flex {
+            display: flex;
+        }
+        .box.yellow {
+            background-color: yellow;
+        }
+        .square.yellow {
+            border-color: rgb(255, 196, 0);
+        }
+        </style>
+        <link href="./yellowBox.css" rel="stylesheet" />
+        <link href="./blueBox.css" rel="stylesheet" />
+        <link href="./greenBox.css" rel="stylesheet" />
+        <link href="./redBox.css" rel="stylesheet" />
+    </head>
+    <body id="ludo">
+        <div class="row">
+            <div id="redbox" class="square red">
+                <div class="redGiti" id="redGiti1">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="redGiti" id="redGiti2">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="redGiti" id="redGiti3">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="redGiti" id="redGiti4">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+            </div>
+            <div class="boxGroup">
+                <div class="boxGroupRow">
+                    <div class="squar"></div>
+                    <div class="squar"></div>
+                    <div class="squar"></div>
+                </div>
+                <div class="boxGroupRow">
+                    <div class="squar"></div>
+                    <div class="squar greenBackground"></div>
+                    <div class="squar greenBackground"></div>
+                </div>
+                <div class="boxGroupRow">
+                    <div class="squar"></div>
+                    <div class="squar greenBackground"></div>
+                    <div class="squar"></div>
+                </div>
+                <div class="boxGroupRow">
+                    <div class="squar"></div>
+                    <div class="squar greenBackground"></div>
+                    <div class="squar"></div>
+                </div>
+                <div class="boxGroupRow">
+                    <div class="squar"></div>
+                    <div class="squar greenBackground"></div>
+                    <div class="squar"></div>
+                </div>
+                <div class="boxGroupRow">
+                    <div class="squar"></div>
+                    <div class="squar greenBackground"></div>
+                    <div class="squar"></div>
+                </div>
+            </div>
+            <div class="square green" id="greenBox">
+                <div class="greenGiti" id="greenGiti1">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="greenGiti" id="greenGiti2">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="greenGiti" id="greenGiti3">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="greenGiti" id="greenGiti4">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box redBackground"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box redBackground"></div>
+                    <div class="box redBackground"></div>
+                    <div class="box redBackground"></div>
+                    <div class="box redBackground"></div>
+                    <div class="box redBackground"></div>
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="square center"></div>
+            <div>
+        <div class="row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row">
+            <div class="box yellow"></div>
+            <div class="box yellow"></div>
+            <div class="box yellow"></div>
+            <div class="box yellow"></div>
+            <div class="box yellow"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box yellow"></div>
+            <div class="box"></div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="square blue" id="blueBox">
+
+                <div class="blueGiti" id="blueGiti1">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="blueGiti" id="blueGiti2">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="blueGiti" id="blueGiti3">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="blueGiti" id="blueGiti4">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+        </div>
+        <div>
+        <div class="row">
+            <div class="box"></div>
+            <div class="box blue"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row">
+            <div class="box"></div>
+            <div class="box blue"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row">
+            <div class="box"></div>
+            <div class="box blue"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row">
+            <div class="box"></div>
+            <div class="box blue"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row">
+            <div class="box blue"></div>
+            <div class="box blue"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+        <div class="square yellow" id="yellowBox">
+
+                <div class="yellowGiti" id="yellowGiti1">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="yellowGiti" id="yellowGiti2">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="yellowGiti" id="yellowGiti3">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+                <div class="yellowGiti" id="yellowGiti4">
+                    <span class="gitiCount">1</span>
+                    <div class="gitiShadow"></div>
+                </div>
+        </div>
+    </div>
+        <div id="showNumber"></div>
+        <button onclick="rollTheDice()" id="dice">Dice</button>
+        <audio id="diceAudio" onended="showDiceNumber()" src="dice-roll.mp3"></audio>
+        <script>
+            const redbox = document.getElementById("redBox");
+            const dice = document.getElementById("dice");
+            const showNumber = document.getElementById("showNumber");
+            const diceAudio = document.getElementById("diceAudio");
+            function rollTheDice() {
+                dice.disabled = true;
+                showNumber.innerHTML = '---';
+                diceAudio.currentTime = 0;
+                diceAudio.play();
+            }
+            function showDiceNumber() {
+                const diceNumber = parseInt((Math.random()*6))+1;
+                showNumber.innerHTML = diceNumber;
+                dice.disabled = false;
+                if (diceNumber === 6) {
+                    moveRedGitiToStartPoint();
+                }
+            }
+            const redGiti1 = document.getElementById("redGiti1");
+            function moveRedGitiToStartPoint() {
+                redGiti1.style.top = '160px';
+                redGiti1.style.left = '0px';
+            }
+        </script>
+    </body>
+</html>
